@@ -24,11 +24,28 @@
     <meta property="twitter:image" content="" />
     </head>
 <body>
-  <div style="grid-template-columns: 1fr 1fr;" class="d-grid gap-3 mx-auto p-2">
-  <div class="p-2">Grid item 1</div>
-  <div class="p-2">Grid item 2</div>
-  <div class="p-2">Grid item 3</div>
-  <div class="p-2">Grid item 4</div>
-</div>
+  <div class="container">
+    <h1>My Futuristic Gallery</h1>
+    <div class="gallery">
+      <!-- Replace these src values with your own images -->
+      <div class="card"><img src="https://source.unsplash.com/random/800x600?futuristic" alt="Image 1"></div>
+      <div class="card"><img src="https://source.unsplash.com/random/800x601?neon" alt="Image 2"></div>
+      <div class="card"><img src="https://source.unsplash.com/random/800x602?tech" alt="Image 3"></div>
+      <div class="card"><img src="https://source.unsplash.com/random/800x603?cyberpunk" alt="Image 4"></div>
+      <div class="card"><img src="https://source.unsplash.com/random/800x604?glow" alt="Image 5"></div>
+      <div class="card"><img src="https://source.unsplash.com/random/800x605?abstract" alt="Image 6"></div>
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="hidden">
+    <div class="lightbox-content">
+      <button id="close">&times;</button>
+      <img id="lightbox-img" src="" alt="Full view" />
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
